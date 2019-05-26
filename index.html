@@ -8,7 +8,7 @@
   	<header class="main-header">
   		<nav class="main-navigation">
   			<span class="main-header-logo">
-  				<img src="img/logo-sedona.svg" width="138" height="71" alt="На главную">
+  				<img src="img/logo-sedona.svg" width="138" height="71" alt="Главная страница">
   			</span>
   			<ul class="site-navigation">
   				<li><a href="#">Информация</a></li>
@@ -35,8 +35,35 @@
     	<p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
 
     		<a class="button" href="search_form.html">Поиск гостиницы в Седоне</a>
-    		<form> class="search_form">
-    		<!--Здесь будет форма-->
+    		<form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+    			<p>
+    				<label>Дата заезда:
+    					<input type="text" name="date" value="24 апреля 2017">
+    				</label>
+    				<button class="calendar" type="button"><img src="img/calendar.svg" alt="Выберете дату заезда"></button>
+
+    			</p>
+    			<p>
+    				<label>Дата выезда:
+    					<input type="text" name="date" value="4 июля 2017">
+    				</label>
+    				<button class="calendar" type="button"><img src="img/calendar.svg" alt="Выберете дату выезда"></button>
+    			</p>
+    			<p>Взрослые:
+    				<button class="plus" type="button"><img src="img/plus.svg" alt="+1 взрослый"></button>
+    					<input type="number" name="adults-value" value="2">
+    				<button class="minus" type="button"><img src="img/minus.svg" alt="-1 взрослый"></button> 
+    				
+    			</p>
+    			<p>Дети:
+    				<button class="plus" type="button"><img src="img/plus.svg" alt="+1 ребенок"></button>
+    					<input type="number" name="childs-value" value="0">
+    				<button class="minus" type="button"><img src="img/minus.svg" alt="-1 ребенок"></button>
+    				
+    			</p>
+    			<button class="button" type="submit">Найти</button>
+
+
     		</form>
     	</section>
     </main>	
@@ -52,7 +79,7 @@
     	
     	<p class="footer-copyright">
     		<b>Website by:</b>
-    		<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
+    		<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Сайт HTML Academy"></a>
     	</p>
     </footer>
 
